@@ -1,0 +1,169 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* header styles */
+
+.container1 {
+    height: 420px;
+    display: flex;
+    background-color: #161616;
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    border-radius: 30px;
+}
+
+.white {
+    color: white;
+}
+
+.half {
+    width: 50%;
+    padding: 0 70px;
+}
+
+#great {
+    margin-top: 50px;
+    font-size: 30px;
+}
+
+#btn {
+    border: none;
+    color: white;
+    background-color: #DD0000;
+    padding: 12px 15px;
+    margin-top: 30px;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container1 .half img {
+    width: 100%;
+}
+
+/* grid section  */
+
+
+.sec1 {
+    margin-top: 100px;
+}
+
+.container2 {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.btns {
+    background-color: #161616;
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.btn1 {
+    width: 160px;
+    height: 40px;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    background-color: white;
+    border-radius: 5px;
+}
+
+#red {
+    background-color: #DD0000;
+    color: white;
+}
+
+.blogs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 25px;
+    gap: 25px;
+}
+
+.blog {
+    border: 1px solid rgba(128, 128, 128, 0.534);
+    border-radius: 7px;
+    padding: 10px 15px;
+}
+
+.blogs .blog .blog-img img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.btn2 {
+    margin-top: 10px;
+    padding: 3px 14px;
+    border: 1px solid black;
+    border-radius: 4px;
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.blog-para {
+    font-weight: 600;
+}
+
+.blog-icons {
+    color: grey;
+}
+
+.container2 {
+    display: flex;
+}
+
+.btns {
+    width: 300px;
+    margin-right: 10px;
+}
+
+
+/* footer here  */
+footer {
+    background-color: #161616;
+    margin-top: 100px;
+    padding-bottom: 30px;
+}
+
+.settings {
+    display: flex;
+    justify-content: center;
+}
+
+.setting {
+    margin: 0 25px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.goal {
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+hr {
+    width: 1000px;
+    height: 1px;
+    background-color: rgba(128, 128, 128, 0.295);
+    border: none;
+    margin-bottom: 50px;
+}
+
+.fa-brands {
+    color: white;
+    margin: 20px 10px;
+}
+
+.end-icons {
+    text-align: center;
+}
