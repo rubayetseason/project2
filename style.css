@@ -40,7 +40,8 @@ body {
 }
 
 .container1 .half img {
-    width: 100%;
+    width: 90%;
+    /* margin-top: 20px; */
 }
 
 /* grid section  */
@@ -166,4 +167,78 @@ hr {
 
 .end-icons {
     text-align: center;
+}
+
+/* mobile view  */
+@media only screen and (max-width:688px) {
+    .container1 {
+        flex-direction: column;
+        height: 533px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .half {
+        text-align: center;
+        width: 50%;
+        padding: 0 70px;
+    }
+
+    #great {
+        margin-left: 100px;
+        font-size: 20px;
+        margin-top: 50px;
+    }
+
+    .pra {
+        font-size: 8px;
+        margin-left: 94px;
+    }
+
+    span {
+        display: none;
+    }
+
+    #btn {
+        padding: 5px 14px;
+        margin-top: 10px;
+        margin-left: 94px;
+        font-size: 10px;
+    }
+
+    .container1 .half img {
+        width: 119%;
+        margin-top: 10px;
+        margin-left: 45px;
+    }
+
+    .container2 {
+        flex-direction: column;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .settings {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .btns {
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    .blogs {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+
+    .sec1 {
+        margin-top: 50px;
+    }
+
+    .btns {
+        width: 275px;
+        background-color: white;
+    }
 }
