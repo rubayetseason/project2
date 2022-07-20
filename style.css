@@ -42,7 +42,7 @@ body {
 }
 
 #btn:hover {
-    transform: translateX(10px);
+    transform: translateX(15px);
 }
 
 .container1 .half img {
@@ -183,4 +183,63 @@ hr {
 
 .end-icons {
     text-align: center;
+}
+
+/* media query  */
+@media only screen and (max-width:688px) {
+    .container1 {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0px;
+        margin-left: 10px;
+        margin-right: 10px;
+        border-radius: 0px;
+    }
+
+    span {
+        display: none;
+    }
+
+    #great {
+        text-align: center;
+    }
+
+    .pra {
+        text-align: center;
+    }
+
+    #btn {
+        margin-left: 5px;
+        padding: 10px 30px;
+        font-size: 14px;
+        border-radius: 0px;
+    }
+
+    .container1 .half img {
+        width: 120%;
+    }
+
+    .container2 {
+        flex-direction: column;
+        margin-left: 10px;
+        margin-right: 20px;
+    }
+
+    .blogs {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+
+    .btn {
+        margin-bottom: 40px;
+        margin-left: 25px;
+        background-color: white;
+    }
+
+    .settings {
+        justify-content: center;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+    }
 }
