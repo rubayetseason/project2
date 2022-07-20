@@ -6,7 +6,7 @@ body {
 /* header styles */
 
 .container1 {
-    height: 420px;
+    /* height: 420px; */
     display: flex;
     background-color: #161616;
     margin-top: 50px;
@@ -25,7 +25,7 @@ body {
 }
 
 #great {
-    margin-top: 50px;
+    margin-top: 70px;
     font-size: 30px;
 }
 
@@ -37,11 +37,18 @@ body {
     margin-top: 30px;
     border-radius: 5px;
     font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+#btn:hover {
+    transform: translateX(10px);
 }
 
 .container1 .half img {
-    width: 90%;
-    /* margin-top: 20px; */
+    width: 100%;
+    padding-top: 10px;
+    margin-top: 20px;
 }
 
 /* grid section  */
@@ -56,15 +63,19 @@ body {
     margin-right: 100px;
 }
 
-.btns {
+.btn {
     background-color: #161616;
-    width: 200px;
+    width: 300px;
     height: 200px;
-    border-radius: 5px;
+}
+
+.buttons {}
+
+.btns {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    margin: 15px 0;
 }
 
 .btn1 {
@@ -74,11 +85,20 @@ body {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     background-color: white;
+    margin: 10px 0;
     border-radius: 5px;
+}
+
+.btn1 a {
+    text-decoration: none;
+    color: black;
 }
 
 #red {
     background-color: #DD0000;
+}
+
+#red a {
     color: white;
 }
 
@@ -86,6 +106,7 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 25px;
+    padding-left: 10px;
     gap: 25px;
 }
 
@@ -120,11 +141,6 @@ body {
 
 .container2 {
     display: flex;
-}
-
-.btns {
-    width: 300px;
-    margin-right: 10px;
 }
 
 
@@ -167,78 +183,4 @@ hr {
 
 .end-icons {
     text-align: center;
-}
-
-/* mobile view  */
-@media only screen and (max-width:688px) {
-    .container1 {
-        flex-direction: column;
-        height: 533px;
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-
-    .half {
-        text-align: center;
-        width: 50%;
-        padding: 0 70px;
-    }
-
-    #great {
-        margin-left: 100px;
-        font-size: 20px;
-        margin-top: 50px;
-    }
-
-    .pra {
-        font-size: 8px;
-        margin-left: 94px;
-    }
-
-    span {
-        display: none;
-    }
-
-    #btn {
-        padding: 5px 14px;
-        margin-top: 10px;
-        margin-left: 94px;
-        font-size: 10px;
-    }
-
-    .container1 .half img {
-        width: 119%;
-        margin-top: 10px;
-        margin-left: 45px;
-    }
-
-    .container2 {
-        flex-direction: column;
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-
-    .settings {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .btns {
-        margin: auto;
-        margin-bottom: 30px;
-    }
-
-    .blogs {
-        grid-template-columns: repeat(1, 1fr);
-        gap: 10px;
-    }
-
-    .sec1 {
-        margin-top: 50px;
-    }
-
-    .btns {
-        width: 275px;
-        background-color: white;
-    }
 }
