@@ -54,7 +54,8 @@ body {
     margin-top: 20px;
 }
 
-/* grid section  */
+
+/* match part here  */
 
 
 .sec1 {
@@ -70,6 +71,7 @@ body {
     background-color: #161616;
     width: 300px;
     height: 200px;
+    margin: 0 20px;
 }
 
 .buttons {}
@@ -82,7 +84,7 @@ body {
 }
 
 .btn1 {
-    width: 180px;
+    width: 160px;
     height: 40px;
     border: none;
     font-family: 'Poppins', sans-serif;
@@ -90,6 +92,7 @@ body {
     background-color: white;
     margin: 10px 0;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .btn1 a {
@@ -105,40 +108,35 @@ body {
     color: white;
 }
 
-.blogs {
+/* flag  */
+.flags {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flag {
+    margin: 15px 5px;
+}
+
+.match {
+    border: 1px solid rgba(128, 128, 128, 0.534);
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.matches {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 25px;
-    padding-left: 10px;
-    gap: 25px;
+    gap: 20px;
 }
 
-.blog {
-    border: 1px solid rgba(128, 128, 128, 0.534);
-    border-radius: 7px;
-    padding: 10px 15px;
+.match-title {
+    text-align: center;
 }
 
-.blogs .blog .blog-img img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-.btn2 {
-    margin-top: 10px;
-    padding: 3px 14px;
-    border: 1px solid black;
-    border-radius: 4px;
-    background-color: white;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-}
-
-.blog-para {
-    font-weight: 600;
-}
-
-.blog-icons {
+.match-time {
+    text-align: center;
     color: grey;
 }
 
@@ -146,8 +144,7 @@ body {
     display: flex;
 }
 
-
-/* footer here  */
+/* footer style  */
 footer {
     background-color: #161616;
     margin-top: 100px;
@@ -189,6 +186,7 @@ hr {
 }
 
 /* media query  */
+/* for phone  */
 @media only screen and (max-width:688px) {
     .container1 {
         flex-direction: column;
@@ -225,18 +223,26 @@ hr {
     .container2 {
         flex-direction: column;
         margin-left: 10px;
-        margin-right: 20px;
+        margin-right: 10px;
     }
 
-    .blogs {
+    .matches {
         grid-template-columns: repeat(1, 1fr);
-        gap: 10px;
+        gap: 20px;
     }
 
     .btn {
         margin-bottom: 40px;
         margin-left: 30px;
         background-color: white;
+    }
+
+    .btn1 {
+        border: 1px solid grey;
+    }
+
+    #red {
+        border: none;
     }
 
     .settings {
@@ -259,6 +265,7 @@ hr {
     }
 }
 
+/* for tablets */
 @media only screen and (min-width:689px) and (max-width:992px) {
     #great {
         font-size: 30px;
@@ -293,16 +300,26 @@ hr {
 
     .btn1 {
         width: 200px;
-        margin: 10px 20px;
+        margin: 10px 10px;
         cursor: pointer;
     }
+
+    .btn1 {
+        border: 1px solid grey;
+    }
+
+    #red {
+        border: none;
+    }
+
 
     .btn {
         background-color: white;
         width: 0;
+        height: 150px;
     }
 
-    .blogs {
+    .matches {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
