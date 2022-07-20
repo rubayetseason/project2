@@ -9,12 +9,14 @@ body {
 /* header styles */
 
 .container1 {
+    cursor: default;
     /* height: 420px; */
     display: flex;
     background-color: #161616;
     margin-top: 50px;
     margin-left: 100px;
     margin-right: 100px;
+    margin-bottom: -50px;
     border-radius: 30px;
 }
 
@@ -35,7 +37,7 @@ body {
 #btn {
     border: none;
     color: white;
-    background-color: #DD0000;
+    background-color: rgb(125, 83, 197);
     padding: 12px 15px;
     margin-top: 30px;
     border-radius: 5px;
@@ -77,6 +79,7 @@ body {
 .buttons {}
 
 .btns {
+    cursor: pointer;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -84,6 +87,7 @@ body {
 }
 
 .btn1 {
+    cursor: pointer;
     width: 160px;
     height: 40px;
     border: none;
@@ -96,12 +100,14 @@ body {
 }
 
 .btn1 a {
+    cursor: pointer;
     text-decoration: none;
     color: black;
 }
 
 #red {
-    background-color: #DD0000;
+    cursor: pointer;
+    background-color: rgb(125, 83, 197);
 }
 
 #red a {
@@ -238,7 +244,7 @@ hr {
     }
 
     .btn1 {
-        border: 1px solid grey;
+        border: 1px solid rgba(128, 128, 128, 0.568);
     }
 
     #red {

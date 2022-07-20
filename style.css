@@ -11,6 +11,7 @@ body {
 .container1 {
     /* height: 420px; */
     display: flex;
+    cursor: default;
     background-color: #161616;
     margin-top: 50px;
     margin-left: 100px;
@@ -35,7 +36,7 @@ body {
 #btn {
     border: none;
     color: white;
-    background-color: #DD0000;
+    background-color: rgb(125, 83, 197);
     padding: 12px 15px;
     margin-top: 30px;
     border-radius: 5px;
@@ -58,6 +59,7 @@ body {
 
 
 .sec1 {
+    cursor: ;
     margin-top: 100px;
 }
 
@@ -72,16 +74,20 @@ body {
     height: 200px;
 }
 
-.buttons {}
+.buttons {
+    cursor: pointer;
+}
 
 .btns {
     display: flex;
+    cursor: pointer;
     flex-direction: column;
     align-items: center;
     margin: 15px 0;
 }
 
 .btn1 {
+    cursor: pointer;
     width: 180px;
     height: 40px;
     border: none;
@@ -93,12 +99,13 @@ body {
 }
 
 .btn1 a {
+    cursor: pointer;
     text-decoration: none;
     color: black;
 }
 
 #red {
-    background-color: #DD0000;
+    background-color: rgb(125, 83, 197);
 }
 
 #red a {
@@ -146,6 +153,20 @@ body {
     display: flex;
 }
 
+/* view  */
+#view {
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    background-color: rgb(125, 83, 197);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: block;
+    width: 100px;
+    margin: 50px auto;
+    display: none;
+}
 
 /* footer here  */
 footer {
@@ -195,6 +216,7 @@ hr {
         align-items: center;
         margin-top: 0px;
         margin-left: 10px;
+        margin-bottom: -50px;
         margin-right: 10px;
         border-radius: 0px;
     }
@@ -218,6 +240,10 @@ hr {
         border-radius: 0px;
     }
 
+    .btn1 {
+        border: 1px solid rgba(128, 128, 128, 0.514);
+    }
+
     .container1 .half img {
         width: 120%;
     }
@@ -235,7 +261,7 @@ hr {
 
     .btn {
         margin-bottom: 40px;
-        margin-left: 30px;
+        margin-left: 35px;
         background-color: white;
     }
 
@@ -255,6 +281,10 @@ hr {
     }
 
     hr {
+        display: none;
+    }
+
+    #view {
         display: none;
     }
 }
@@ -300,6 +330,7 @@ hr {
     .btn {
         background-color: white;
         width: 0;
+        height: 150px;
     }
 
     .blogs {
@@ -329,5 +360,24 @@ hr {
 
     .kala {
         border: 1px solid grey;
+    }
+
+    #view {
+        border: none;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        background-color: rgb(125, 83, 197);
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        display: block;
+        width: 100px;
+        margin: 50px auto;
+        cursor: pointer;
+        transition: transform 1s;
+    }
+
+    #view:hover {
+        transform: translateY(10px);
     }
 }
