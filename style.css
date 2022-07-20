@@ -258,3 +258,76 @@ hr {
         display: none;
     }
 }
+
+@media only screen and (min-width:689px) and (max-width:992px) {
+    #great {
+        font-size: 30px;
+    }
+
+    span {
+        display: none;
+    }
+
+    #btn {
+        margin-top: 0px;
+    }
+
+    .half {
+        width: 50%;
+        padding: 0 50px;
+    }
+
+    .container1 .half img {
+        width: 115%;
+        padding-top: 30px;
+        margin-top: 80px;
+    }
+
+    .container2 {
+        flex-direction: column;
+    }
+
+    .btns {
+        flex-direction: row;
+    }
+
+    .btn1 {
+        width: 200px;
+        margin: 10px 20px;
+        cursor: pointer;
+    }
+
+    .btn {
+        background-color: white;
+        width: 0;
+    }
+
+    .blogs {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    hr {
+        width: 500px;
+    }
+
+    .settings {
+        flex-wrap: wrap;
+    }
+
+    .setting {
+        margin: 0 45px;
+    }
+
+    .none {
+        display: none;
+    }
+
+    .sec1 {
+        margin-top: 50px;
+    }
+
+    .kala {
+        border: 1px solid grey;
+    }
+}
